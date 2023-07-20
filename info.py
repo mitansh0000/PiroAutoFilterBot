@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '15503725'))
 API_HASH = environ.get('API_HASH', 'd11e4a03659488e40429f3c39431b6db')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6008979863:AAG3AmDXrgNBPueNiUViPfhBd9clEYSJ8xg')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6008979863:AAHgiwEBoW1_Bm5LpPHCQkzLr646piBR7i0')
 PORT = environ.get("PORT", "8080")
 
 # Bot settings
@@ -40,7 +40,7 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001727262090').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001410579892')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
