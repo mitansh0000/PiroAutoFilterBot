@@ -51,7 +51,7 @@ SUPPORT_CHAT_ID = -1001410579892
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://moviemafia:moviemafia@cluster0.y4reyev.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://md:md@cluster0.ushqlz8.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "filterbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'filter')
 
